@@ -14,7 +14,7 @@ $(function() {
         });
     
     // clicking image of inactive column just opens column, doesn't go to link   
-    $("#page-wrap").delegate("a","click", function(e) { 
+    $("#page-wrap").delegate(".image","click", function(e) { 
         
         if ( !$(this).parent().hasClass("curCol") ) {         
             e.preventDefault(); 
